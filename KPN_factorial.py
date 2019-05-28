@@ -31,7 +31,7 @@ def split_worker():
                 mult_queue_b.put(element) #Put that value in the multiply queue b
                 split_queue.task_done() #"Anounce" task completion
                 print (element) #Print to show functionality
-                if element > 1000000: #Limit to prevent crazy printing
+                if element > 100000000000000000000: #Limit to prevent crazy printing
                         break
         #return to stop thread
         return 
